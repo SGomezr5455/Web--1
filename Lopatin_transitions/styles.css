@@ -1,0 +1,249 @@
+.transitions {
+    display:flex;
+    gap:16px;
+    align-items:center;
+    margin:12px 0;
+}
+
+.t-btn {
+    background:#2196f3;
+    color:white;
+    padding:8px 14px;
+    border:none;
+    border-radius:6px;
+    transition: background-color .5s;
+}
+
+
+.t-btn:hover {
+    background: red;
+}
+
+.scale-box {
+    width:60px;
+    height:60px;
+    background:#8bc34a;
+    transition: transform 1s;
+}
+
+.scale-box:hover {
+    transform: scale(1.5);
+}
+
+.move-box {
+    width:60px;
+    height:60px;
+    background:#ff9800;
+    transition: transform .5s;
+}
+
+.move-box:hover {
+    transform: translateX(100px);
+}
+
+.delay-box {
+    width:60px;
+    height:60px;
+    background:#9c27b0;
+    transition: transform .5s .3s;
+}
+
+.delay-box:hover {
+    transform: translateX(100px);
+}
+
+.scene {
+    display:flex;
+    gap:12px;
+    align-items:center;
+    margin:12px 0;
+}
+
+.shape {
+    width:60px;
+    height:60px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    color:white;
+    cursor:pointer;
+}
+
+.square {
+    background:#2196f3;
+    animation: move1 4s linear infinite;
+}
+
+.circle {
+    background:#f44336;
+    border-radius:50%;
+    animation: move2 4s linear infinite;
+}
+
+.triangle {
+    width:0;
+    height:0;
+    border-left:30px solid transparent;
+    border-right:30px solid transparent;
+    border-bottom:60px solid #ffeb3b;
+    animation: move3 4s linear infinite;
+}
+
+.rect {
+    background:#00bcd4;
+    width:40px;
+    height:80px;
+    animation: move4 4s linear infinite;
+}
+
+.diamond {
+    background:#9c27b0;
+    transform: rotate(45deg);
+    width:50px;
+    height:50px;
+    animation: move5 4s linear infinite;
+}
+
+@keyframes move1 { 0%{transform:translateY(0)}50%{transform:translateY(-30px)}100%{transform:translateY(0)} }
+@keyframes move2 { 0%{transform:translateX(0)}50%{transform:translateX(40px)}100%{transform:translateX(0)} }
+@keyframes move3 { 0%{transform:translate(0,0)}50%{transform:translate(-30px,-20px)}100%{transform:translate(0,0)} }
+@keyframes move4 { 0%{transform:translateX(0)}50%{transform:translateX(60px)}100%{transform:translateX(0)} }
+@keyframes move5 { 0%{transform:translateY(0)}50%{transform:translateY(60px)}100%{transform:translateY(0)} }
+
+.animated-element {
+    width: 150px;
+    height: 150px;
+    background-color: #ff7f50;
+    border-radius: 10px;
+    transition: transform 0.5s ease, background-color 0.5s ease;
+    cursor: pointer;
+    margin-left: 20px;
+}
+
+.animated-element:hover {
+    transform: rotate(360deg) scale(1.2);
+    background-color: #ff1493;
+}
+
+.animated-element:active {
+    transform: rotate(0deg) scale(1);
+    background-color: #7fffd4;
+}
+
+
+
+
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.logo {
+    font-size: 24px;
+}
+
+.menu {
+    display: flex;
+    gap: 15px;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+}
+
+.main-content {
+    display: flex;
+    margin-top: 120px;
+    gap: 20px;
+}
+
+.sidebar1 {
+    background-color: #f4f4f4;
+    padding: 20px;
+    width: 200px;
+    border-radius: 10px;
+    flex-grow: 0;
+    flex-shrink: 0;
+}
+
+.content {
+    flex-grow: 1;
+    background-color: #fafafa;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.sidebar2 {
+    background-color: #f4f4f4;
+    padding: 20px;
+    width: 100%;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.product-card {
+    background-color: #f9f9f9;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.product-card:hover {
+    transform: scale(1.05);
+}
+
+.product-card img {
+    width: 100%;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.product-name {
+    padding: 10px;
+    font-size: 18px;
+    background-color: #ddd;
+    border-top: 1px solid #ccc;
+}
+
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+
+
+

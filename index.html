@@ -1,10 +1,71 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>Title</title>
 </head>
+<link rel="stylesheet" href="styles.css">
 <body>
-$END$
+<header>
+    <nav>
+        <a href="#home">Главная</a>
+        <a href="#about">Обо мне</a>
+        <a href="#contact">Контакты</a>
+        <a href="#spisok">Список</a>
+        <a href="#form">Форма</a>
+    </nav>
+</header>
+<section id="home">
+    <h1>Блок первый</h1>
+    <p>Это первый блок снизу будет ссылка на ютуб</p>
+    <div class="wrapper1">
+        <a href="http://youtube.com">Ютуб тут</a>
+        <a href="https://vk.ru">Тут вк</a>
+    </div>
+</section>
+
+<section id="about">
+    <h2>Блок второй обо мне</h2>
+    <p>Второй заголовок с кнопкой</p>
+    <div class="wrapper">
+        <button class="button1">Кнопка тут</button>
+        <p class="text_button"><--- Она меняет цвет</p>
+    </div>
+</section>
+
+<section id="contact">
+    <h2>Тут контакты</h2>
+    <p>Контакты: +7930... дальше не скажу</p>
+</section>
+
+<section id="form">
+    <aside>
+        <h3>Форма</h3>
+        <label for="bank">Банковская система</label>
+        <input id="bank" type="text" placeholder="Сюда банковскую систему Сбера" required>
+        <button id="send">Отправить</button>
+        <div class="checkbox-wrap">
+            <input type="checkbox" id="toggle">
+            <label for="toggle">Показать текст</label>
+            <p class="toggle-text">Дополнительный текст появился!</p>
+        </div>
+    </aside>
+</section>
+
+
+    <section id="spisok">
+        <h2>Список покупок</h2>
+            <ul class="demo-list">
+                <li>Хлеб</li>
+                <li>Молоко</li>
+                <li>Яйца</li>
+                <li>Колбаса докторская</li>
+            </ul>
+    </section>
+
+
+
+
+
 </body>
 </html>

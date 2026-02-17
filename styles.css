@@ -1,0 +1,135 @@
+.button1:hover {
+    background-color: green;
+}
+
+body { padding-top: 56px; }
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    background: #fff;
+    border-bottom: 1px solid #ddd;
+}
+
+header nav {
+    display:flex;
+    gap:8px;
+    align-items:center;
+    padding:10px 12px;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    padding: 14px 1px;
+    margin: auto;
+}
+nav a:active {
+    background-color: darkgreen;
+    color: white;
+    padding: 10px 6px;
+    border-radius: 4px;
+}
+
+section a:visited {
+    color: red;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+section a{
+    text-decoration: none;
+    color: black;
+}
+
+.wrapper {
+    display: flex;
+    align-items: center ;
+    gap: 10px;
+}
+
+.wrapper1 {
+    display: flex;
+    align-items: center ;
+    gap: 120px;
+}
+
+input {
+    width: 210px;
+    padding: 3px;
+}
+
+aside button {
+    background: linear-gradient(135deg, #4CAF50, #FFD700);
+    cursor: pointer;
+    border: none;
+    padding: 6px 12px;
+    color: white;
+    border-radius: 4px;
+}
+
+aside button:hover {
+    background: linear-gradient(135deg, #ff00ed, #002aff);
+}
+
+input:focus {
+    background-color: #ff9800;
+}
+
+
+nav a:first-child {
+    color: darkblue; }
+nav a:last-child {
+    color: darkred; }
+
+nav a:hover, nav a:focus {
+    text-decoration: underline;
+    color: green;
+}
+
+.wrapper1 a:nth-child(2) {
+    color: purple;
+}
+
+.button1:focus {
+    outline: 3px solid rgba(0,128,0,0.25);
+}
+.button1:active {
+    transform: translateY(1px);
+}
+
+.checkbox-wrap {
+    margin-top: 8px;
+}
+.toggle-text {
+    display: none; margin: 6px 0 0 0;
+}
+#toggle:checked + label + .toggle-text {
+    display: block; color: #cccc0b;
+}
+
+input:required:placeholder-shown {
+    box-shadow: 0 0 0 2px rgba(255,0,0,0.08);
+}
+
+button:disabled {
+    opacity: 0.5; cursor: not-allowed;
+}
+
+section:target {
+    outline: 4px solid rgba(247, 85, 16, 0.12);
+    background: rgba(0,0,0,0.02);
+}
+
+.demo {
+    display:flex; gap:20px;
+    align-items:flex-start;
+}
+.demo-list li:nth-of-type(3n) {
+    background:#f0f8ff; padding:4px;
+}
+
